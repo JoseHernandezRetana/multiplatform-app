@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Multiplataforma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-sync-alt"></i> Sistema Multiplataforma</h1>
+            <p class="subtitle">Demostración de despliegue en múltiples entornos</p>
+        </header>
+        
+        <div class="platform-info">
+            <div class="platform-card" id="web-platform">
+                <div class="platform-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Versión Web</h3>
+                <p class="status active">Activa</p>
+                <div class="platform-details">
+                    <p><strong>Entorno:</strong> <span id="web-env">Navegador Web</span></p>
+                    <p><strong>URL:</strong> <span id="web-url">Cargando...</span></p>
+                    <p><strong>Resolución:</strong> <span id="web-resolution"></span></p>
+                </div>
+            </div>
+            
+            <div class="platform-card" id="desktop-platform">
+                <div class="platform-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <h3>Versión Escritorio</h3>
+                <p class="status" id="desktop-status">Verificando...</p>
+                <div class="platform-details">
+                    <p><strong>Entorno:</strong> <span id="desktop-env">Electron</span></p>
+                    <p><strong>Sistema:</strong> <span id="desktop-os">Cargando...</span></p>
+                    <p><strong>Versión:</strong> <span id="desktop-version"></span></p>
+                </div>
+            </div>
+            
+            <div class="platform-card" id="mobile-platform">
+                <div class="platform-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Versión Móvil</h3>
+                <p class="status active">Compatible</p>
+                <div class="platform-details">
+                    <p><strong>Entorno:</strong> <span>Responsive Design</span></p>
+                    <p><strong>Dispositivo:</strong> <span id="mobile-device">Detectando...</span></p>
+                    <p><strong>Tamaño pantalla:</strong> <span id="mobile-size"></span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="validation-section">
+            <h2><i class="fas fa-check-circle"></i> Validación de Funcionalidad</h2>
+            
+            <div class="test-container">
+                <div class="test-item">
+                    <h4>Comunicación Backend</h4>
+                    <button id="test-api" class="test-btn">
+                        <i class="fas fa-server"></i> Probar Conexión
+                    </button>
+                    <div id="api-result" class="test-result">No probado</div>
+                </div>
+                
+                <div class="test-item">
+                    <h4>Almacenamiento Local</h4>
+                    <input type="text" id="storage-input" placeholder="Introduce un valor">
+                    <button id="test-storage" class="test-btn">
+                        <i class="fas fa-save"></i> Guardar
+                    </button>
+                    <div id="storage-result" class="test-result"></div>
+                </div>
+                
+                <div class="test-item">
+                    <h4>Interfaz Responsive</h4>
+                    <button id="test-responsive" class="test-btn">
+                        <i class="fas fa-expand-alt"></i> Probar Responsive
+                    </button>
+                    <div id="responsive-result" class="test-result"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="deployment-info">
+            <h2><i class="fas fa-cloud-upload-alt"></i> Información de Despliegue</h2>
+            <div class="deployment-details">
+                <p><strong>Fecha despliegue:</strong> <span id="deployment-date"></span></p>
+                <p><strong>Entornos validados:</strong> <span id="validated-envs">Web, Móvil, Escritorio</span></p>
+                <p><strong>Repositorio GitHub:</strong> 
+                    <a href="#" id="github-link" target="_blank">Enlace al repositorio</a>
+                </p>
+                <p><strong>Estado:</strong> <span class="status-badge deployed">Desplegado</span></p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Proyecto de demostración de despliegue multiplataforma - Evaluación Universitaria</p>
+            <p id="current-platform">Plataforma actual: Detectando...</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-github"></i> Código Fuente</a>
+                <a href="#"><i class="fas fa-book"></i> Documentación</a>
+                <a href="#"><i class="fas fa-video"></i> Demostración</a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
