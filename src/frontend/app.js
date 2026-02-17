@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Configurar enlace GitHub
     document.getElementById('github-link').href = 
-        'https://github.com/tu-usuario/interfaz-multiplataforma';
+        'https://www.github.com/JoseHernandezRetana/multiplatform-app';
     
     // Configurar eventos de botones
     setupEventListeners();

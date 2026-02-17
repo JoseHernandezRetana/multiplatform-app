@@ -45,7 +45,7 @@ app.get('/download-desktop', (req, res) => {
 });
 
 // Iniciar servidor
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`✅ Servidor backend funcionando en http://localhost:${PORT}`);
     console.log(`✅ Frontend disponible en http://localhost:${PORT}/`);
     console.log(`✅ API de prueba en http://localhost:${PORT}/api/test`);
