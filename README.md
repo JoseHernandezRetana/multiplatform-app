@@ -1,20 +1,20 @@
-# Interfaz Multiplataforma - Proyecto de Despliegue
+Interfaz Multiplataforma - Proyecto de Despliegue
 
-## 📋 Descripción
+ Descripción
 Proyecto demostrativo del proceso de despliegue de una interfaz programada en distintas plataformas (Web, Móvil, Escritorio).
 
-## 🎯 Objetivos del Proyecto
+Objetivos del Proyecto
 - Demostrar el despliegue multiplataforma
 - Validar funcionamiento en distintos entornos
 - Mostrar consistencia visual y funcional
 - Documentar el proceso completo
 
-## 🚀 Despliegue Rápido
+Despliegue Rápido
 
-### Opción 1: Versión Web (Recomendada)
-**Enlace de producción:** https://interfaz-multiplataforma.vercel.app
+Opción 1: Versión Web (Recomendada)
+Enlace de producción: https://interfaz-multiplataforma.vercel.app
 
-### Opción 2: Ejecución local
+ Opción 2: Ejecución local
 ```bash
 # 1. Clonar repositorio
 git clone https://github.com/tu-usuario/interfaz-multiplataforma.git
